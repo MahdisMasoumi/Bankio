@@ -1,0 +1,92 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f3f3f3;
+  padding: 1rem 0;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  height: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 2rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-nav .links {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .links.faded {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .links:hover {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.account-btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #ad3747;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.account-btn:hover {
+  background-color: #80404a;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav__logo {
+    height: 2rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-nav .links {
+    font-size: 0.85rem;
+  }
+
+  .account-btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
