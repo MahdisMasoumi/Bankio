@@ -29,10 +29,10 @@ const Modal = () => {
           <div className="modal-body">
             <form id="createAccountForm">
               <div className="form-group row mb-3">
-                <label for="name" className="col-sm-4 col-form-label">
+                <label for="name" className="col-sm-5 col-form-label">
                   User Name
                 </label>
-                <div className="col-sm-8">
+                <div className="col-sm-7">
                   <input
                     type="text"
                     className="form-control"
@@ -42,10 +42,10 @@ const Modal = () => {
                 </div>
               </div>
               <div className="form-group row mb-3">
-                <label for="email" className="col-sm-4 col-form-label">
+                <label for="email" className="col-sm-5 col-form-label">
                   Email Address
                 </label>
-                <div className="col-sm-8">
+                <div className="col-sm-7">
                   <input
                     type="email"
                     className="form-control"
@@ -55,10 +55,10 @@ const Modal = () => {
                 </div>
               </div>
               <div className="form-group row mb-3">
-                <label for="password" className="col-sm-4 col-form-label">
+                <label for="password" className="col-sm-5 col-form-label">
                   Password
                 </label>
-                <div className="col-sm-8">
+                <div className="col-sm-7">
                   <input
                     type="password"
                     className="form-control"
