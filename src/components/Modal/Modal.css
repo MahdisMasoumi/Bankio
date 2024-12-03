@@ -42,7 +42,7 @@
     text-align: center;
   }
   .modal {
-    text-align: center; /* Center align the text on smaller screens */
+    text-align: center;
   }
 }
 .modal-body {
@@ -89,5 +89,6 @@
 @media (min-width: 575px) {
   .modal-dialog {
     max-width: 500px;
+    max-height: 500px;
   }
 }

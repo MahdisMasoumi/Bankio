@@ -58,7 +58,6 @@ function App() {
       section.classList.add("section--hidden");
     });
 
-    // Cleanup event listeners and observers
     return () => {
       if (btnScrollTo) {
         btnScrollTo.removeEventListener("click", handleScrollTo);

@@ -72,7 +72,6 @@
   right: 0.5rem;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .testimonial {
     padding: 2rem;

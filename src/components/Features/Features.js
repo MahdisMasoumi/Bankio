@@ -72,7 +72,6 @@ const Features = () => {
               index % 2 === 1 ? "flex-md-row-reverse" : ""
             } mt-5`}
           >
-            {/* Image */}
             <div className="col-12 col-md-6 features__image-last">
               <img
                 src={feature.imgSrc}
@@ -81,7 +80,6 @@ const Features = () => {
               />
             </div>
 
-            {/* Text */}
             <div className="col-12 col-md-6 features__text-first">
               <div className="features__feature text-center text-md-start">
                 <div

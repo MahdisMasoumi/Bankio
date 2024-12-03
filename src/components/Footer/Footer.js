@@ -24,7 +24,6 @@ const Footer = () => {
     <footer className="footer py-2">
       <div className="container">
         <div className="row justify-content-center text-center">
-          {/* Footer Navigation */}
           <div className="col-12">
             <ul className="footer__nav d-flex flex-nowrap justify-content-center list-unstyled">
               {footerLinks.map(link => (
@@ -42,8 +41,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Footer Logo */}
           <div className="col-12">
             <div className="text-center">
               <img

@@ -48,7 +48,6 @@
   font-weight: bold;
   color: #494790;
 }
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .features__text-first {
     order: -1;
