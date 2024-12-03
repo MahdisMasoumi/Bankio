@@ -1,0 +1,93 @@
+.highlight1 {
+  position: relative;
+  z-index: 1;
+}
+
+.highlight1::after {
+  border-radius: 4px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  transform: scale(1.01, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+}
+
+.modal-dialog {
+  color: #454545;
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+}
+
+.modal-content {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.modal-title {
+  z-index: 2;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .modal-title {
+    text-align: center;
+  }
+  .modal {
+    text-align: center; /* Center align the text on smaller screens */
+  }
+}
+.modal-body {
+  padding: 1rem 3.5rem;
+}
+.col-form-label {
+  color: #444444;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+.form-control {
+  border: 1.4px #e4e4e4 solid;
+  border-radius: 0.2rem;
+  height: 1.8rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-submit {
+  padding: 0.4rem 2rem;
+  font-size: 70%;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #f275bc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #da6aa9;
+  color: #fff;
+}
+
+.modal {
+  opacity: 1;
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+@media (min-width: 575px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+}

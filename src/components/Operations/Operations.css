@@ -1,46 +1,42 @@
 .ashghar {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   position: sticky;
-  top: 6rem;
+  top: 7rem;
   padding: 10px;
 }
 
 .operations__content {
-  align-items: center;
-  padding: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   background-clip: padding-box;
+  box-shadow: 8px 8px 20px rgba(62, 38, 62, 0.1);
+  background-color: #f3f2f3;
 }
 
-.operations__content--1 {
-  background-color: #f5faff;
-}
-
-.operations__content--2 {
-  background-color: #fff9f6;
-}
-.operations__content--3 {
-  background-color: #ebebeb;
-}
 .operations-image {
   width: 100%;
-  height: 11rem;
+  height: 18rem;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .operations__header {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .operations__p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
+  .ashghar {
+    top: 5rem;
+  }
+  .operations__content {
+    margin-top: 1rem;
+  }
   .operations__header {
     font-size: 1rem;
   }

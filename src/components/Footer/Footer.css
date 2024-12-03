@@ -1,35 +1,36 @@
 .footer {
-  background-color: #d8d8d8;
-  color: #171717;
+  background-color: #f3f2f3;
+  color: #2c2c2c;
 }
 
 .footer__nav {
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .footer__link {
-  color: #1d1d1d;
+  padding: 10px;
+  color: #575757;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.95rem;
+  transition: color 0.5s ease;
 }
 
 .footer__link:hover {
-  color: var(--color-primary);
+  color: #3e383e;
+  text-decoration: underline;
 }
 
 .footer__logo {
-  width: 4rem;
-  height: 4rem;
+  width: 10rem;
   max-width: 150px;
 }
 
 @media (max-width: 768px) {
-  .footer__nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
   .footer__link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

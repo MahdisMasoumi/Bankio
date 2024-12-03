@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #f18e9b;
+  --color-primary: #f18ec6;
   --color-primary2: #7d595d;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
@@ -9,7 +9,8 @@
   --color-primary-opacity: #e0bec33a;
   --color-secondary-opacity: #ffcd0331;
   --color-tertiary-opacity: #ff58602d;
-  --gradient-primary: linear-gradient(to top left, #e0bec3, #f18e9b);
+  --gradient-primary: linear-gradient(to top left, #e0bec3, #f18ec6);
+  --gradient-primary2: linear-gradient(to top left, #e0bec3, #f18ec6);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
   --gradient-tertiary: linear-gradient(to top left, #e0d9c3, #f1eee6);
 }
@@ -26,8 +27,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #393939;
+  color: #3e383e;
   line-height: 1.7;
-  background-color: #f3f3f3;
+  background-color: #fdfdfd;
   overflow-x: hidden;
 }

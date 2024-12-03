@@ -1,28 +1,17 @@
 import React, { useEffect } from "react";
+import Modal from "../Modal/Modal";
 import "./Header.css";
 
 const Header = () => {
   useEffect(() => {
-    const allNavLinks = document.querySelectorAll(".nav-link");
+    const links = document.querySelectorAll(".links");
     const navbarToggler = document.querySelector(".navbar-toggler");
 
-    allNavLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        if (navbarToggler.getAttribute("aria-expanded") === "true") {
-          navbarToggler.click();
-        }
-      });
-    });
-
-    return () => {
-      allNavLinks.forEach(link => {
-        link.removeEventListener("click", () => {});
-      });
+    const handleNavLinkClick = () => {
+      if (navbarToggler.getAttribute("aria-expanded") === "true") {
+        navbarToggler.click();
+      }
     };
-  }, []);
-
-  useEffect(() => {
-    const links = document.querySelectorAll(".links");
 
     const handleMouseOver = event => {
       links.forEach(link => {
@@ -33,18 +22,18 @@ const Header = () => {
     };
 
     const handleMouseOut = () => {
-      links.forEach(link => {
-        link.classList.remove("faded");
-      });
+      links.forEach(link => link.classList.remove("faded"));
     };
 
     links.forEach(link => {
+      link.addEventListener("click", handleNavLinkClick);
       link.addEventListener("mouseover", handleMouseOver);
       link.addEventListener("mouseout", handleMouseOut);
     });
 
     return () => {
       links.forEach(link => {
+        link.removeEventListener("click", handleNavLinkClick);
         link.removeEventListener("mouseover", handleMouseOver);
         link.removeEventListener("mouseout", handleMouseOut);
       });
@@ -52,12 +41,12 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="container-fluid px-5 py-2 border-bottom header">
-      <nav className="navbar navbar-expand-md">
+    <header className="container-fluid border-bottom header">
+      <nav className="navbar navbar-expand-md navbar-light">
         <div className="container-fluid">
           <a
-            class="navbar-brand d-flex align-items-center "
-            href="main-section"
+            className="navbar-brand d-flex align-items-center"
+            href="#main-section"
           >
             <img
               src="img/logo.png"
@@ -82,7 +71,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link links " href="#section--1">
+                <a className="nav-link links" href="#section--1">
                   Features
                 </a>
               </li>
@@ -96,7 +85,7 @@ const Header = () => {
                   Testimonials
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-center">
                 <button
                   className="nav-link account-btn"
                   data-bs-toggle="modal"
@@ -109,8 +98,9 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <Modal /> {}
     </header>
   );
 };
 
-export default Header; // Default export
+export default Header;

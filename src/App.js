@@ -38,6 +38,27 @@ function App() {
       link.addEventListener("click", handleNavLinkClick);
     });
 
+    const revealSection = (entries, observer) => {
+      const [entry] = entries;
+
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.remove("section--hidden");
+      observer.unobserve(entry.target);
+    };
+
+    const sectionObserver = new IntersectionObserver(revealSection, {
+      root: null,
+      threshold: 0.15,
+    });
+
+    const allSections = document.querySelectorAll(".section");
+    allSections.forEach(section => {
+      sectionObserver.observe(section);
+      section.classList.add("section--hidden");
+    });
+
+    // Cleanup event listeners and observers
     return () => {
       if (btnScrollTo) {
         btnScrollTo.removeEventListener("click", handleScrollTo);
@@ -45,6 +66,7 @@ function App() {
       allNavLinks.forEach(link => {
         link.removeEventListener("click", handleNavLinkClick);
       });
+      allSections.forEach(section => sectionObserver.unobserve(section));
     };
   }, []);
 

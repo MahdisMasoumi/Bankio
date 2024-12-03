@@ -2,23 +2,21 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #f3f3f3;
-  padding: 1rem 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fffdfe;
+  width: 100%;
+  padding: 0.8rem 1rem;
 }
 
-.navbar {
+.header .navbar {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0.1rem 1.2rem;
 }
 
 .nav__logo {
-  height: 3rem;
+  height: 2.3rem;
   transition: transform 0.3s ease-in-out;
-}
-
-.nav__logo:hover {
-  transform: scale(1.1);
 }
 
 .navbar-toggler {
@@ -30,15 +28,12 @@
   width: 2rem;
 }
 
-.navbar-nav {
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: auto;
+.nav-item {
+  text-align: center;
+  padding: 0 0.3rem;
 }
 
 .navbar-nav .links {
-  padding: 0.5rem 1rem;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
 }
@@ -52,17 +47,17 @@
 }
 
 .account-btn {
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
   color: #ffffff;
-  background-color: #ad3747;
+  font-size: 90%;
+  padding: 0.5rem 0.7rem !important;
+  border-radius: 0.6rem;
+  background-color: #f275bc;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .account-btn:hover {
-  background-color: #80404a;
   color: #ffffff;
+  background-color: #da6aa9;
 }
 
 @media (max-width: 768px) {
@@ -72,6 +67,7 @@
 
   .navbar-nav {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 
@@ -81,12 +77,16 @@
 
   .account-btn {
     font-size: 0.8rem;
+    width: auto;
+    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
   .navbar-nav {
     flex-direction: row;
-    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
   }
 }
