@@ -53,11 +53,21 @@ function App() {
     });
 
     const allSections = document.querySelectorAll(".section");
+
     allSections.forEach(section => {
-      sectionObserver.observe(section);
       section.classList.add("section--hidden");
+
+      const rect = section.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible) {
+        section.classList.remove("section--hidden");
+      } else {
+        sectionObserver.observe(section);
+      }
     });
 
+    // Cleanup
     return () => {
       if (btnScrollTo) {
         btnScrollTo.removeEventListener("click", handleScrollTo);

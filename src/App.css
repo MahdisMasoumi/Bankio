@@ -17,6 +17,8 @@ img,
 .section {
   padding: 6rem 0.5rem;
   transition: transform 0.6s, opacity 0.6s;
+  opacity: 1;
+  transform: translateY(0);
 }
 @media (max-height: 800px) {
   .about-page {
@@ -29,7 +31,7 @@ img,
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(7rem);
+  transform: translateY(2rem);
 }
 
 .section__description {
