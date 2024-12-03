@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       id: 1,
       header: "Best financial decision ever!",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis.",
+      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit.",
       imgSrc: "img/user1.png",
       imgAlt: "Portrait",
       name: "Liam Lynn",
@@ -15,7 +15,7 @@ const Testimonials = () => {
     {
       id: 2,
       header: "The last step to becoming a complete minimalist",
-      text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet consectetur.",
+      text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet.",
       imgSrc: "img/user2.png",
       imgAlt: "Portrait",
       name: "Sara Miles",
@@ -24,7 +24,7 @@ const Testimonials = () => {
     {
       id: 3,
       header: "Finally free from old-school banks",
-      text: "Debitis, nihil sit minus suscipit magni aperiam vel tenetur incidunt commodi architecto numquam omnis nulla autem, necessitatibus blanditiis modi similique quidem. Odio aliquam culpa dicta beatae quod maiores ipsa minus.",
+      text: "Debitis, nihil sit minus suscipit magni aperiam vel tenetur incidunt commodi architecto numquam omnis nulla autem, necessitatibus blanditiis modi similique quidem. Odio aliquam culpa dicta beatae quod maiores ipsa.",
       imgSrc: "img/user3.png",
       imgAlt: "Portrait",
       name: "Nick Gomes",
