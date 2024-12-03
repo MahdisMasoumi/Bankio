@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 .testimonial {
   text-align: center;
   padding: 3rem;
-  background: #fff;
+  background: #f3f2f3;
   border-radius: 0.8rem;
 }
 
