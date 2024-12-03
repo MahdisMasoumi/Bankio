@@ -50,7 +50,7 @@
 }
 .col-form-label {
   color: #444444;
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .form-control {
@@ -67,7 +67,7 @@
 
 .btn-submit {
   padding: 0.4rem 2rem;
-  font-size: 70%;
+  font-size: 80%;
   border-radius: 0.5rem;
   color: #ffffff;
   background-color: #f275bc;
