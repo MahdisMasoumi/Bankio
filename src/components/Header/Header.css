@@ -36,6 +36,7 @@
 .navbar-nav .links {
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
+  font-weight: 600;
 }
 
 .navbar-nav .links.faded {
