@@ -15,7 +15,7 @@ const Testimonials = () => {
     {
       id: 2,
       header: "The last step to becoming a complete minimalist",
-      text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor sit amet.",
+      text: "Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor.",
       imgSrc: "img/user2.png",
       imgAlt: "Portrait",
       name: "Sara Miles",
