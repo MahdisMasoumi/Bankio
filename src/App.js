@@ -67,7 +67,6 @@ function App() {
       }
     });
 
-    // Cleanup
     return () => {
       if (btnScrollTo) {
         btnScrollTo.removeEventListener("click", handleScrollTo);
