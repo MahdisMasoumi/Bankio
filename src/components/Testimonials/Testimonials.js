@@ -83,7 +83,7 @@ const Testimonials = () => {
           >
             <span
               className="carousel-control-prev-icon"
-              aria-hidden="true"
+              aria-label="Previous Slide"
             ></span>
             <span className="visually-hidden">Previous</span>
           </button>
@@ -95,7 +95,7 @@ const Testimonials = () => {
           >
             <span
               className="carousel-control-next-icon"
-              aria-hidden="true"
+              aria-label="Next Slide"
             ></span>
             <span className="visually-hidden">Next</span>
           </button>
