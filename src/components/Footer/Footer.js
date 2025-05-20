@@ -3,21 +3,21 @@ import "./Footer.css";
 
 const Footer = () => {
   const footerLinks = [
-    {
-      id: 1,
-      label: "LinkedIn",
-      url: "https://www.linkedin.com/in/mahdismasoumi/",
-    },
+    // {
+    //   id: 1,
+    //   label: "LinkedIn",
+    //   url: "https://www.linkedin.com/in/mahdismasoumi/",
+    // },
     {
       id: 2,
       label: "GitHub",
-      url: "https://github.com/MahdisMasoumi",
+      url: "https://github.com/MahdisMasoumi/Bankio",
     },
-    {
-      id: 3,
-      label: "Portfolio",
-      url: "https://mahdis-masoumi.vercel.app/about",
-    },
+    // {
+    //   id: 3,
+    //   label: "Portfolio",
+    //   url: "https://mahdis-masoumi.vercel.app/about",
+    // },
   ];
 
   return (
@@ -41,7 +41,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <div className="text-center">
               <img
                 src="img/logom.png"
@@ -49,7 +49,7 @@ const Footer = () => {
                 className="footer__logo img-fluid"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
